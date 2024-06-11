@@ -1,1 +1,42 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenditure Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expenditure Tracker</h1>
+        <div class="form-group">
+            <label for="creditAlert">Credit Alert:</label>
+            <input type="number" id="creditAlert" />
+        </div>
+        <div class="form-group">
+            <label for="debitAlert">Debit Alert:</label>
+            <input type="number" id="debitAlert" />
+        </div>
+        <div class="form-group">
+            <button id="updateBalanceBtn">Update Balance</button>
+        </div>
+        <div class="form-group">
+            <label for="moneyInAmount">Money In Amount:</label>
+            <input type="number" id="moneyInAmount" />
+            <button id="moneyInBtn">Money In</button>
+        </div>
+        <div class="form-group">
+            <label for="moneyOutAmount">Money Out Amount:</label>
+            <input type="number" id="moneyOutAmount" />
+            <button id="moneyOutBtn">Money Out</button>
+        </div>
+        <div class="alert-info">
+            <p>Credit Alert: <span id="creditAlertDisplay"></span></p>
+            <p>Debit Alert: <span id="debitAlertDisplay"></span></p>
+        </div>
+    </div>
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
